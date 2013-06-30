@@ -892,5 +892,5 @@ public class Settings extends PreferenceActivity
     public static class AboutActivity extends Settings { /* empty */ }
     public static class PieActivity extends Settings { /* empty */ }
     public static class HaloActivity extends Settings { /* empty */ }
-    public static class CarbonSettingsActivity extends Settings { /* empty */ }
+    public static class CarbonActivity extends Settings { /* empty */ }
 }

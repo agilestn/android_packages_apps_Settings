@@ -1545,7 +1545,7 @@
 
         <!-- Carbon Activities Start -->
         <activity android:name=".carbon.About" />
-        <activity android:name=".carbon.CarbonSettings" />
+        <activity android:name=".carbon.Carbon" />
         <activity android:name=".carbon.ChangeLog" />
         <activity android:name=".carbon.Halo" />
         <activity android:name=".carbon.InterfaceSettings" />
@@ -1566,7 +1566,7 @@
         <activity android:name=".carbon.StatusBarClockStyle" />
         <activity android:name=".carbon.StatusBarToggles" />
 
-        <activity android:name="Settings$CarbonSettingsActivity"
+        <activity android:name="Settings$CarbonActivity"
                 android:label="@string/carbon_settings_title"
                 android:taskAffinity=""
                 android:excludeFromRecents="true">
@@ -1575,7 +1575,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.carbon.CarbonSettings" />
+                android:value="com.android.settings.carbon.Carbon" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/carbon_settings" />
         </activity>

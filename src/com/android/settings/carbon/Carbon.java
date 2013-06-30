@@ -22,9 +22,9 @@ import android.preference.Preference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class CarbonSettings extends SettingsPreferenceFragment {
+public class Carbon extends SettingsPreferenceFragment {
 
-    private static final String TAG = "CarbonSettings";
+    private static final String TAG = "Carbon";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

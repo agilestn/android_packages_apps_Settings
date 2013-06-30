@@ -67,7 +67,7 @@
         android:id="@+id/carbon_settings"
         android:icon="@drawable/ic_settings_about_carbon"
         android:title="@string/carbon_settings_title"
-        android:fragment="com.android.settings.carbon.CarbonSettings" />
+        android:fragment="com.android.settings.carbon.Carbon" />
 
     <!-- TRDS -->
     <header
