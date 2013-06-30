@@ -80,6 +80,7 @@ public class StatusBarToggles extends SettingsPreferenceFragment implements
 
     private static final String PREF_ENABLE_TOGGLES = "enabled_toggles";
     private static final String PREF_COLLAPSE_ALL = "collapse_shade_all";
+    private static final String PREF_FLOAT_ON_CLICK = "float_on_click";
     private static final String PREF_TOGGLES_PER_ROW = "toggles_per_row";
     private static final String PREF_TOGGLES_STYLE = "toggles_style";
     private static final String PREF_TOGGLE_FAV_CONTACT = "toggle_fav_contact";
@@ -111,6 +112,7 @@ public class StatusBarToggles extends SettingsPreferenceFragment implements
     Preference mEnabledToggles;
     Preference mLayout;
     CheckBoxPreference mCollapseAll;
+    CheckBoxPreference mFloatOnClick;
     ListPreference mTogglesPerRow;
     ListPreference mTogglesStyle;
     Preference mFavContact;
@@ -180,6 +182,9 @@ public class StatusBarToggles extends SettingsPreferenceFragment implements
 
         mCollapseAll = (CheckBoxPreference) findPreference(PREF_COLLAPSE_ALL);
         mCollapseAll.setOnPreferenceChangeListener(this);
+
+        mFloatOnClick = (CheckBoxPreference) findPreference(PREF_FLOAT_ON_CLICK);
+        mFloatOnClick.setOnPreferenceChangeListener(this);
 
         mTogglesPerRow = (ListPreference) findPreference(PREF_TOGGLES_PER_ROW);
         mTogglesPerRow.setOnPreferenceChangeListener(this);
@@ -304,6 +309,12 @@ public class StatusBarToggles extends SettingsPreferenceFragment implements
             Settings.System.putBoolean(mContentRes,
                     Settings.System.SHADE_COLLAPSE_ALL, val);
             mContentRes.notifyChange(Settings.System.getUriFor(Settings.System.SHADE_COLLAPSE_ALL), null);
+            return true;
+        } else if (preference == mFloatOnClick) {
+            boolean val = (Boolean) newValue;
+            Settings.System.putBoolean(mContentRes,
+                    Settings.System.FLOAT_ON_CLICK, val);
+            mContentRes.notifyChange(Settings.System.getUriFor(Settings.System.FLOAT_ON_CLICK), null);
             return true;
         } else if (preference == mTogglesStyle) {
             int val = Integer.parseInt((String) newValue);
