@@ -5420,6 +5420,7 @@
     <string name="hardware_keys_action_custom_app">Custom app</string>
     <string name="hardware_keys_action_camera">Camera</string>
     <string name="hardware_keys_action_quicksettings">Quicksettings panel</string>
+    <string name="hardware_keys_action_widgets">Widgets viewpager</string>
 
     <!-- Navigation Bar -->
     <string name="navigation_bar">Navigation bar</string>

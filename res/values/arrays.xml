@@ -1755,6 +1755,7 @@
         <item>@string/hardware_keys_action_search</item>
         <item>@string/hardware_keys_action_last_app</item>
         <item>@string/hardware_keys_action_voice_search</item>
+        <item>@string/hardware_keys_action_widgets</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
@@ -1774,6 +1775,7 @@
         <item>5</item>
         <item>12</item>
         <item>6</item>
+        <item>16</item>
     </string-array>
 
     <!-- Lockscreen longpress actions -->
